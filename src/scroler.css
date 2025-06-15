@@ -1,31 +1,38 @@
-/* scroler.css */
-
 .scroller-container {
   position: relative;
   overflow: hidden;
-  padding: 3rem 0;
-  margin-top: -1px;
+  padding: 3rem 1rem;
+  margin-top: 9px;
 }
 
 .scroller {
   display: flex;
   gap: 1rem;
-  animation: scroll 30s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
 .scroller-item {
-  flex: 0 0 auto; /* Prevent shrinking or growing */
-  width: 370px; /* Set consistent width */
-  height: 280px; /* Set consistent height */
+  flex: 0 0 auto;
+  width: clamp(200px, 25vw, 370px);
+  height: clamp(150px, 18vw, 280px);
   object-fit: cover;
   border-radius: 1rem;
   margin-top: 20px;
-  filter: grayscale(20%) contrast(1.1);
-  transition: transform 0.3s ease;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+  filter: grayscale(15%) contrast(1.15) brightness(90%);
+  transition: transform 0.4s ease, filter 0.4s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* White curved lines - using SVG */
+.scroller-item:hover {
+  transform: scale(1.08);
+  filter: grayscale(0%) contrast(1.3) brightness(105%);
+  z-index: 2;
+}
+
+.scroller-container:hover .scroller {
+  animation-play-state: paused;
+}
+
 .curve-line {
   position: absolute;
   left: 0;
@@ -42,10 +49,9 @@
 
 .curve-bottom {
   bottom: -20px;
-   transform: rotateX(190deg);
+  transform: rotateX(190deg);
 }
 
-/* Optional: Keyframe scroll */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -53,4 +59,34 @@
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Responsive font and layout tweaks */
+@media (max-width: 768px) {
+  .scroller-container {
+    padding: 2rem 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .curve-line {
+    height: 60px;
+  }
+}
+
+body {
+  overflow-x: hidden;
 }
