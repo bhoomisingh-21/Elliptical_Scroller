@@ -1,5 +1,5 @@
-Elliptical Scroller 🎠
-
+**Elliptical Scroller 🎠
+**
 This project is a responsive infinite scroller built with React and Vite. The application leverages modern web development tools and techniques to ensure a smooth and interactive user experience.
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
