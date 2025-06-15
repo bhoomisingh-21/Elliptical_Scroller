@@ -1,4 +1,4 @@
-**Elliptical Scroller 🎠**
+# 🚀 Elliptical Scroller: A Modern React + Vite Project
 
 This project is a responsive infinite scroller built with React and Vite. The application leverages modern web development tools and techniques to ensure a smooth and interactive user experience.
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -8,7 +8,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Features
+## ✨ Features You’ll Love
 🌟 Infinite scrolling of images with smooth animations.
 
 🎨 Designed with Tailwind CSS for a sleek and responsive UI.
@@ -17,7 +17,7 @@ Features
 
 🔧 Custom animations and styles using CSS and keyframes.
 
-Getting Started
+## Getting Started
 Follow the steps below to set up and run the project locally.
 
 Prerequisites
@@ -29,33 +29,23 @@ Installation
 Clone the Repository
 
 bash
-Copy
-Edit
+
 git clone https://github.com/bhoomisingh-21/Elliptical_Scroller.git
 cd Elliptical_Scroller
+
 Install Dependencies
 
 bash
-Copy
-Edit
 npm install
 Start the Development Server
 
 bash
-Copy
-Edit
 npm run dev
 Open the App
 Open your browser and navigate to:
-
-arduino
-Copy
-Edit
 http://localhost:5173/
-Folder Structure
-php
-Copy
-Edit
+
+##Folder Structure
 Elliptical_Scroller/
 │
 ├── public/             # Static assets
@@ -69,7 +59,8 @@ Elliptical_Scroller/
 ├── package.json        # Project dependencies
 ├── vite.config.js      # Vite configuration
 └── README.md           # Project documentation
-Built With
+
+<h2>Built With</h2>
 React: A JavaScript library for building user interfaces.
 
 Vite: A fast build tool and development server.
@@ -82,10 +73,3 @@ Contributing
 Contributions, issues, and feature requests are welcome!
 Feel free to check the issues page.
 
-License
-This project is open-source and available under the MIT License.
-
-Acknowledgments
-Inspired by modern UI/UX designs.
-
-Thanks to the React and Vite communities for their amazing tools.
